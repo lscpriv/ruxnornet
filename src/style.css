@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "InterVar";
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    src: url("/src/InterVariable.woff2") format("woff2-variations"),
+        url("/src/InterVariable.woff2") format("woff2");
+    src: url("/src/InterVariable.woff2") format("woff2") tech("variations");
+}
+
+:root {
+    font-family: "InterVar", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7b41b0;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center .image {
+    width: 256px;
+    height: 256px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+.credits {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 16px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.credits a:any-link {
+    color: #fe8000;
+}
